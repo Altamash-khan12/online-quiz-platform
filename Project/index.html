@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Online Quiz Competition </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="welcome-container">
+    <h1> Online Quiz Competition </h1>
+    <p>Enter your name to start the quiz:</p>
+    <input type="text" id="username" placeholder="Your Name">
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <h1>Welcome to the Quiz!</h1>
+    <div id="question-section">
+      <h2 id="question-text">Question text here...</h2>
+      <ul id="options">
+        <!-- Options will be added dynamically -->
+      </ul>
+    </div>
+    <div id="timer">Time Left: <span id="time-left">30</span>s</div>
+    <div id="lifelines">
+      <button id="fifty-fifty-btn">50-50</button>
+      <button id="swap-btn">Swap Question</button>
+    </div>
+    <button id="next-btn" class="hidden">Next Question</button>
+  </div>
+
+  <div id="leaderboard-container" class="hidden">
+    <h1>Leaderboard</h1>
+    <p id="final-score"></p>
+    <table id="leaderboard">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Leaderboard rows will be added dynamically -->
+      </tbody>
+    </table>
+    <button id="restart-btn">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
